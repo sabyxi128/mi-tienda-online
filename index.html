@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de la tienda" class="logo">
+        <h1>Mi Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#ropa">Ropa</a></li>
+                <li><a href="#zapatos">Zapatos</a></li>
+                <li><a href="#collares">Collares</a></li>
+                <li><a href="#hogar">Cosas de Hogar</a></li>
+                <li><a href="#carrito">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos-container">
+            <!-- Ejemplo de Producto -->
+            <div class="producto" data-nombre="Blusa Roja" data-precio="200">
+                <img src="blusa.jpg" alt="Blusa Roja">
+                <h3>Blusa Roja</h3>
+                <p>Precio: Q200</p>
+                <button onclick="agregarAlCarrito(this)">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <a id="whatsapp-link" href="#" target="_blank">Enviar Pedido por WhatsApp</a>
+    </section>
+</body>
+</html>
